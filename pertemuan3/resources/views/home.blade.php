@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe Store</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
@@ -13,11 +14,15 @@
             <a href=""><img src="https://img.freepik.com/premium-vector/shoes-shop-logo-template-design_316488-452.jpg" alt="Shoe Store Logo"></a>
         </div>
         <div class="right">
-            <a href="">Home</a>
-            <a href="">Product</a>
+            <a href="#">Home</a>
+            <a href="/product">Product</a>
             <a href="">Contact Us</a>
             <a href="" class="login">Login</a>
         </div>
     </nav>
+
+    <div class="image">
+        <img src="{{ asset('asset/Store.jpg') }}" alt="">
+    </div>
 </body>
 </html>
